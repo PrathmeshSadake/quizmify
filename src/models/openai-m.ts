@@ -4,7 +4,7 @@ export async function generateWithOpenAI({
   topic,
   amount = 5,
   apiKey,
-  options_length,
+  options_length = 4,
 }: {
   topic: string;
   amount?: number;
@@ -25,7 +25,7 @@ export async function generateWithOpenAI({
       options: [
         {
           title: "New York",
-          isCorrect: "false",
+          isCorrect: false,
         },
       ],
       correct_answer: "Paris",

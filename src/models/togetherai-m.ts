@@ -12,7 +12,7 @@ export async function generateWithTogetherAI({
   options_length?: number;
 }) {
   const client = new OpenAI({
-    apiKey,
+    apiKey: "315c97cdf65822b64bd9dc963950df0e11d0301916a198f4a400be0a6b605881",
     baseURL: "https://api.together.xyz/v1",
   });
   const mcqStructure = [
