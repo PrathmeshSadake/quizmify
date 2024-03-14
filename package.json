@@ -1,6 +1,6 @@
 {
   "name": "quizmify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create engaging quizzes for various purposes such as education, training, or entertainment.",
   "main": "index.js",
   "scripts": {
