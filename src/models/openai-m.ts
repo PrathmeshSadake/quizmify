@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-async function generateWithOpenAI({
+export async function generateWithOpenAI({
   topic,
   amount = 5,
   apiKey,
@@ -51,4 +51,3 @@ async function generateWithOpenAI({
   });
   return completion.choices[0].message.content;
 }
-export default generateWithOpenAI;

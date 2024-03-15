@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-async function generateWithTogetherAI({
+export async function generateWithTogetherAI({
   topic,
   amount = 5,
   apiKey,
@@ -48,5 +48,3 @@ async function generateWithTogetherAI({
   const output = response.choices[0].message.content;
   return output;
 }
-
-export default generateWithTogetherAI;

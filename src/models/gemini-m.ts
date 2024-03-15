@@ -13,7 +13,7 @@ type GeminiProps = {
   options_length?: number;
   model_name?: string;
 };
-async function generateWithGemini({
+export async function generateWithGemini({
   apiKey,
   topic,
   amount = 5,
@@ -85,5 +85,3 @@ async function generateWithGemini({
 
   return response.text();
 }
-
-export default generateWithGemini;

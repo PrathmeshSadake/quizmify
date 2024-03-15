@@ -1,12 +1,18 @@
 {
   "name": "quizmify",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Create engaging quizzes for various purposes such as education, training, or entertainment.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
+    "dev": "nodemon src/index.ts",
+    "start": "node lib/index.js",
     "build": "npx tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts"
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/PrathmeshSadake/quizmify.git"
   },
   "keywords": [],
   "author": "Prathmesh Sadake",
@@ -14,10 +20,14 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
   },
   "dependencies": {
     "@google/generative-ai": "^0.3.0",
     "openai": "^4.29.0"
-  }
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
